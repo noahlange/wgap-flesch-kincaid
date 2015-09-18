@@ -1,0 +1,15 @@
+{
+  "name": "wgap-flesch-kincaid",
+  "version" : "1.0.0",
+  "author": {
+    "name": "Noah Lange",
+    "url": "http://noahlange.com"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "flesch-kincaid": "^0.1.0",
+    "rousseau": "0.0.3",
+    "syllable": "^0.1.4"
+  }
+}
