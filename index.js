@@ -25,7 +25,7 @@ module.exports = (text, opts) => {
     var offset = sentence.length;
     
     // Return a suggestion if it's over the specified FK level.    
-    return fk > opts.level ? {
+    return fk > opts.level && index !== -1? {
       reason: `has a Flesch-Kincaid readibility score is ${ fk.toFixed(3) }`,
       index: index,
       offset: offset
