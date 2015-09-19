@@ -18,7 +18,7 @@ module.exports = (text, opts) => {
     var fk = fleschKincaid({
       sentence: 1,
       word: tokenizer.getTokens().length,
-      syllable: syllable(sentence.value)
+      syllable: syllable(sentence)
     });
     
     var index = text.indexOf(sentence);
