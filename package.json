@@ -11,5 +11,15 @@
     "flesch-kincaid": "^0.1.0",
     "sentence-tokenizer": "0.0.7",
     "syllable": "^0.1.4"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js",
+    "travis-test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/*"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "coveralls": "^2.11.4",
+    "istanbul": "^0.3.20",
+    "mocha": "^2.3.2"
   }
 }
